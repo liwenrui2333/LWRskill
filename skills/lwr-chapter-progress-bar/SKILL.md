@@ -1,5 +1,5 @@
 ---
-name: chapter-progress-bar
+name: lwr-chapter-progress-bar
 description: 给成片加顶部章节进度条（品牌 + 环节名 + 时间码 + 随时间推进的填充条）。输入 SRT 或章节 JSON，先通读全文理解观看路径再用陈述句命名段落，出透明 ProRes 素材给剪映、或直接叠到 mp4。含 SRT 原话核对、段长校验、渲染后自动 QA。触发词：进度条、章节条、视频进度条、环节进度条、chapter bar。
 ---
 

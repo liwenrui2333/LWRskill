@@ -1,4 +1,4 @@
-# chapter-progress-bar
+# lwr-chapter-progress-bar
 
 给成片加顶部章节进度条。喂 SRT 字幕，AI 通读全文理解观众路径后分段、用陈述句命名，输出透明 ProRes 4444 素材（拖进剪映）或直接烧进 mp4。
 
@@ -42,8 +42,8 @@
 
 ```bash
 git clone https://github.com/liwenrui2333/LWRskill.git
-cp -r LWRskill/skills/chapter-progress-bar ~/.claude/skills/
-cd ~/.claude/skills/chapter-progress-bar
+cp -r LWRskill/skills/lwr-chapter-progress-bar ~/.claude/skills/
+cd ~/.claude/skills/lwr-chapter-progress-bar
 npm install
 ```
 

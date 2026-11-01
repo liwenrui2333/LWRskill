@@ -8,21 +8,21 @@
 把想要的目录拷进 `~/.claude/skills/`（或 `~/.codex/skills/`）：
 
 ```bash
-cp -r skills/chapter-progress-bar ~/.claude/skills/
+cp -r skills/lwr-chapter-progress-bar ~/.claude/skills/
 ```
 
 重启 Claude Code 后生效。也可以整个仓库克隆后软链：
 
 ```bash
 git clone https://github.com/liwenrui2333/LWRskill.git
-ln -s "$(pwd)/LWRskill/skills/chapter-progress-bar" ~/.claude/skills/
+ln -s "$(pwd)/LWRskill/skills/lwr-chapter-progress-bar" ~/.claude/skills/
 ```
 
 ## 目前有的
 
 | skill | 做什么 | 依赖 |
 |---|---|---|
-| [chapter-progress-bar](skills/chapter-progress-bar/) | 给成片加顶部章节进度条（品牌 + 环节名 + 时间码 + 填充条）。吃 SRT 或章节 JSON，出透明 ProRes 素材给剪映，或直接烧到 mp4 | Node 18+、Remotion、FFmpeg |
+| [lwr-chapter-progress-bar](skills/lwr-chapter-progress-bar/) | 给成片加顶部章节进度条（品牌 + 环节名 + 时间码 + 填充条）。吃 SRT 或章节 JSON，出透明 ProRes 素材给剪映，或直接烧到 mp4 | Node 18+、Remotion、FFmpeg |
 
 ## 目录约定
 
@@ -36,7 +36,7 @@ skills/<skill-name>/
 ```
 
 `SKILL.md` 的 `description` 决定什么时候会被触发，写清「用户说什么话时该用」比写功能更有用。
-目录名不要带前缀，别叫 `liwenrui-xxx`——这个仓库本身就代表「我写的」。
+目录名统一用 `lwr-` 前缀（LWRskill 的缩写），一眼能看出是这个仓库出去的。
 
 ## License
 
