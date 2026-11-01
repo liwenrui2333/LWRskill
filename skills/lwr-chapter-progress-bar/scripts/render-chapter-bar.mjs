@@ -209,9 +209,13 @@ const props = {
   position: cfg.position ?? 'top',
   theme: cfg.theme ?? 'dark',
   progress: cfg.progress ?? true,
-  showTime: cfg.showTime ?? true,
-  height: barHeight,           // 条高
+  showTime: cfg.showTime ?? false,
+  height: cfg.barHeight ? barHeight : undefined, // 不填则按画布宽等比缩放
   totalSeconds: duration,
+  showBrand: cfg.showBrand ?? false,  // 默认不画品牌块（liuliu 规格里没有）
+  showLabels: cfg.showLabels ?? true, // false = 不画章节名，只留进度条
+  fillColor: cfg.fillColor,          // 十六进制填充色，优先于 accent
+  opacity: cfg.opacity ?? 1,         // 整条不透明度；0.8 左右能压住画面又不闷
   width: dims.width,           // 画布宽 → calculateMetadata
   canvasHeight: dims.height,   // 画布高 → calculateMetadata
   fps: dims.fps,

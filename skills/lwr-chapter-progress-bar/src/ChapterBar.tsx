@@ -18,6 +18,10 @@ export type ChapterBarProps = {
   width?: number; // 画布尺寸，由 scripts/render-chapter-bar.mjs 从源视频 ffprobe 传入
   canvasHeight?: number;
   fps?: number;
+  showBrand?: boolean;
+  showLabels?: boolean;
+  fillColor?: string;
+  opacity?: number;
 };
 
 // 独立章节条合成：整帧透明，只画一条 HUD 横带。
@@ -31,9 +35,13 @@ export const ChapterBar: React.FC<ChapterBarProps> = ({
   position = 'top',
   theme = 'dark',
   progress = true,
-  showTime = true,
-  height = 52,
+  showTime = false,
+  height,
   totalSeconds,
+  showBrand = false,
+  showLabels = true,
+  fillColor,
+  opacity,
 }) => {
   const offset = position === 'top' ? { top: 0 } : { bottom: 0 };
   return (
@@ -49,6 +57,10 @@ export const ChapterBar: React.FC<ChapterBarProps> = ({
           progress={progress}
           theme={theme}
           totalSeconds={totalSeconds}
+          showBrand={showBrand}
+          showLabels={showLabels}
+          fillColor={fillColor}
+          opacity={opacity}
         />
       </div>
     </AbsoluteFill>

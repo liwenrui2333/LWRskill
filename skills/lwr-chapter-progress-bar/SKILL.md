@@ -96,7 +96,12 @@ description: 给成片加顶部章节进度条（品牌 + 环节名 + 时间码 
 | `srt` | 推荐 | 给路径就启用原话核对（见第 6 步） |
 | `chapters[].startText/endText` | 推荐 | 逐字引用该段首尾句，缺省则跳过核对 |
 | `width` / `canvasHeight` | 无 `--overlay` 时必填 | 画布尺寸，猜错整条要重渲 |
-| `barHeight` | | 条高，默认按短边自动算 |
+| `barHeight` | | 条高，默认按画布宽等比缩放（1440→64） |
+| `fillColor` | | 填充色十六进制，优先于 `accent` |
+| `opacity` | | 整条不透明度，0.8 左右能压住画面又不闷 |
+| `showBrand` | | 是否显示左侧品牌块，默认 false |
+| `showLabels` | | 是否显示章节名，默认 true |
+| `showTime` | | 是否显示右上角时间码，默认 false |
 | `theme` | | `dark`（默认）/ `light` |
 | `accent` | | `red` / `blue` / `green` / `yellow` |
 | `position` | | `top`（默认）/ `bottom` |
