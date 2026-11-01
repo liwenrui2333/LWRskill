@@ -1,0 +1,24 @@
+{
+  "name": "liwenrui-chapter-progress-bar",
+  "version": "1.0.0",
+  "description": "给成片加顶部章节进度条：SRT 语义分段 + 陈述句标题 + 透明 ProRes 素材 / 直接烧录成片",
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "studio": "remotion studio src/index.ts",
+    "still": "remotion still src/index.ts ChapterBar",
+    "dry": "node scripts/render-chapter-bar.mjs chapters.example.json --dry-run",
+    "render": "node scripts/render-chapter-bar.mjs chapters.example.json",
+    "burn": "node scripts/render-chapter-bar.mjs chapters.example.json --overlay input.mp4"
+  },
+  "dependencies": {
+    "@fontsource/inter": "5.3.0",
+    "@fontsource/noto-sans-sc": "5.3.0",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "remotion": "4.0.533"
+  },
+  "devDependencies": {
+    "@remotion/cli": "4.0.533"
+  }
+}

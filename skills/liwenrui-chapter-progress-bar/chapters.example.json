@@ -1,0 +1,43 @@
+{
+  "brand": "PPT-Master",
+  "series": "七万一千星",
+  "duration": 34.319,
+  "srt": "example.srt",
+  "accent": "red",
+  "theme": "dark",
+  "position": "top",
+  "progress": true,
+  "barHeight": 52,
+  "chapters": [
+    {
+      "label": "凭什么七万星",
+      "start": 0,
+      "end": 6.566,
+      "startText": "据说这是PPT界的天花板",
+      "endText": "它到底牛在哪？"
+    },
+    {
+      "label": "每一页都能改",
+      "start": 6.566,
+      "end": 13.533,
+      "startText": "首先，它不是那种生成一堆死图片",
+      "endText": "还能直接套你们公司的模板"
+    },
+    {
+      "label": "它先想再画",
+      "start": 13.533,
+      "end": 24.633,
+      "startText": "更关键的是，调研-抓素材-排版-成PPT一条龙",
+      "endText": "所以每页都知道自己在干嘛"
+    },
+    {
+      "label": "一句话装上",
+      "start": 24.633,
+      "end": 34.319,
+      "startText": "以前想用它得自己配环境",
+      "endText": "一份能直接演示的PPT就做好了"
+    }
+  ],
+  "width": 1920,
+  "canvasHeight": 1080
+}
