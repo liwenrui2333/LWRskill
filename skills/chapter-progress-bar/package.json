@@ -1,5 +1,5 @@
 {
-  "name": "liwenrui-chapter-progress-bar",
+  "name": "chapter-progress-bar",
   "version": "1.0.0",
   "description": "给成片加顶部章节进度条：SRT 语义分段 + 陈述句标题 + 透明 ProRes 素材 / 直接烧录成片",
   "type": "module",
